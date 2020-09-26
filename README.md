@@ -13,6 +13,7 @@ make
   ```js
   sudo yum update    #先更新yum
   sudo yum install centos-release-scl
+  sudo yum install devtoolset-7-gcc*
   sudo yum install devtoolset-7
   scl enable devtoolset-7 bash
   
