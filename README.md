@@ -1,6 +1,29 @@
-# install_redis  
+# install_redis  (centos7)
 
 * 第一步
+  * 先安裝python
+```js
+sudo yum install gcc  
+sudo yum install zlib-devel  
+cd /usr/src  
+wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz  
+tar xzf Python-3.6.1.tgz  
+cd Python-3.6.1  
+./configure
+make altinstall    #避免蓋掉舊版python
+ln -s /usr/src/Python-3.6.1/python python3   # 建立 soft link 至開機執行目錄
+python3.6    #執行python
+```
+* 第二步
+  * 安裝pip
+  ```js
+  yum -y install epel-release
+  yum install python-pip
+  pip install --upgrade pip
+  ```
+
+* 可以開始安裝redis了
+
 ```js
 wget http://download.redis.io/releases/redis-6.0.8.tar.gz
 tar xzf redis-6.0.8.tar.gz
