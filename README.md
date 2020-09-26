@@ -17,7 +17,7 @@ make
   sudo yum install devtoolset-7
   scl enable devtoolset-7 bash
   
-  gcc --version   #安裝完後看一夏gcc版本是否已更新到最新版
+  gcc --version   #安裝完後看一下gcc版本是否已更新到最新版
   ```
 * 啟動redis(如果成功會看到redis的mark)
 
